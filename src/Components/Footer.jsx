@@ -1,12 +1,15 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Instagram, Facebook } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram, Facebook,MessageSquareDot } from 'lucide-react';
 
 export default function Footer() {
+
+  const phoneNumber = "00923076160255"
   const socialLinks = [
     { icon: Github, href: 'https://github.com/tayyab90m', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-tayyab-31b955222', label: 'LinkedIn' },
     { icon: Instagram, href: 'https://www.instagram.com/tayyab90m?igsh=MXVuemo4djA0aTNoNg==', label: 'Instagram' },
     { icon: Facebook, href: 'https://www.facebook.com/share/12Fr1ZdTfLj/', label: 'Facebook' },
+    { icon: MessageSquareDot, href: `https://wa.me/${phoneNumber}`, label: 'whatsapp' },
     { icon: Mail, href: 'mailto:tayyab90m@gmail.com', label: 'Email' },
   ];
 
@@ -33,7 +36,7 @@ export default function Footer() {
           </div>
           <div className="text-center">
             <p className="text-sm">
-              © 2025 - {new Date().getFullYear()} Muhammad Tayyab. All rights reserved.
+              © 2025 - Muhammad Tayyab. All rights reserved.
             </p>
           </div>
         </div>
